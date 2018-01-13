@@ -6,6 +6,7 @@ function smolMult(x) {
 	for (let i = 2; i <= x; i++) {
 		if (count % i === 0) {
 			if (i === x) {
+				console.log(count);
 				return count;
 			}
 		} else {

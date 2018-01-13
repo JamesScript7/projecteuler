@@ -12,7 +12,7 @@ function fibo(maxVal) {
     }
   }
 
-	console.log(evenSum);
+	console.log(num, evenSum);
   return `Even number sum: ${evenSum}`;
 }
 

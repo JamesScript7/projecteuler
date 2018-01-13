@@ -13,4 +13,4 @@ function coolFunction(num, total=0) {
 	return coolFunction(x, total);
 }
 
-coolFunction(10);
+coolFunction(1000);

@@ -11,6 +11,7 @@ function primeFactorFinder(num) {
       if (product <= num) {
         primeFactor.push(i);
       } else {
+				console.log(primeFactor);
         return primeFactor;
       }
     }

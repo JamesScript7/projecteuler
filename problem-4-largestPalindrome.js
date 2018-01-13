@@ -9,6 +9,7 @@ function palindromic(x) {
 						palindrome = String(product.split('').reverse().join(''));
 			
 			if (product === palindrome) {
+				console.log(product);
 				return `Largest Palindrome Found:\r${i} x ${j} = ${product}`;
 			}
 		}
