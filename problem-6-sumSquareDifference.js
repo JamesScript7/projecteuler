@@ -23,7 +23,7 @@ function squarinator(x) {
 		squareSum += i;
 	}
 
-	difference = Math.pow(squareSum, 2) - sumSquare;
+	difference = (squareSum ** 2) - sumSquare;
 
 	console.log(difference);
 	return difference;
