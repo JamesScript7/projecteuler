@@ -1,5 +1,9 @@
 'use strict';
 
+/*
+ * Prime Factor: Any of the prime numbers that can be multiplied to give the original number.
+ * */
+
 function primeFactorFinder(num) {
   const primeFactor = [];
   let   product     = 1;
