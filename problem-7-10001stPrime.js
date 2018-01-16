@@ -12,6 +12,20 @@
  * 
  * */
 
-function primeMultiplier() {
-	
+function primeMultiplier(stopValue) {
+	let primeNums = [2];
+	let count = 2;
+
+	for (let i = 3; primeNums[primeNums.length -1] < stopValue; i++) {
+		if ( i % count === 0 && count < i) {
+			count++;
+		} else if ( i % count !== 0 && count < i ) {
+			primeNums.push(i);
+		}
+	}
+	console.log(count);
+	console.log(primeNums);
+	//return primeNums[x - 1];
 }
+
+primeMultiplier(50);

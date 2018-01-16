@@ -29,4 +29,4 @@ function primeFactorFinder(num) {
 
 }
 
-primeFactorFinder(13195);
+primeFactorFinder(600851475143);
