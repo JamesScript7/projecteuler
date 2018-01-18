@@ -17,19 +17,19 @@ function greatestProductFinder(num, adjDigit) {
 
 	for (let i = 0; i <= num.length; i++) {
 		let product = 1;
+
 		if (i <= num.length - adjDigit) {
 		  for (let j = 0; j < adjDigit; j++) {
 			  product *= parseInt(num[i + j]);
 		  }
 		  if (product > largestProduct) {
-		 	 largestProduct = product;
-		  }
+				largestProduct = product;
+			}
 		} else {
-	    console.log(largestProduct);
-	    return largestProduct;
+			console.log(largestProduct);
+			return largestProduct;
 		}
 	}
-
 }
 
 greatestProductFinder(largeDigit, 13);
