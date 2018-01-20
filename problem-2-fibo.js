@@ -27,7 +27,7 @@ function fibo(maxVal) {
   }
 
 	console.log(num, evenSum);
-  return `Even number sum: ${evenSum}`;
+	return `Even number sum: ${evenSum}`;
 }
 
 fibo(4000000);
