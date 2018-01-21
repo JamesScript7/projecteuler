@@ -12,6 +12,8 @@
  * 
  * */
 
+const rf = require('./reusableFunctions');
+
 function primeMultiplier(stopValue) {
 	let primeNums = [2];
 	let count = 2;
@@ -28,4 +30,4 @@ function primeMultiplier(stopValue) {
 	//return primeNums[x - 1];
 }
 
-primeMultiplier(50);
+primeMultiplier(10001);

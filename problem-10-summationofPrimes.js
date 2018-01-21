@@ -8,7 +8,7 @@
  *
  * */
 
-// THIS DOES NOT WORK WELL WITH INPUT 2000000.
+// Initial attempt: THIS DOES NOT WORK WELL WITH INPUT 2000000.
 /*
 function primeSummer(maxVal) {
 	let sum = 2;
@@ -28,18 +28,12 @@ function primeSummer(maxVal) {
 }
 */
 
-function isPrime(num) {
-	var start = 2;
-	while (start <= Math.sqrt(num)) {
-		if (num % start++ < 1) return false;
-	}
-	return num > 1;
-}
+const rf = require('./reusableFunctions');
 
 function sumOfPrimes(n) {
 	let sum = 0;
   for (let i = 0; i < n; i++) {
-		if ( isPrime(i) ) { sum += i; }
+		if ( rf.isPrime(i) ) { sum += i; }
 	}
 	console.log(sum);
 	return sum;
