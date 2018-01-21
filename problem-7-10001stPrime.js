@@ -16,18 +16,17 @@ const rf = require('./reusableFunctions');
 
 function primeMultiplier(stopValue) {
 	let primeNums = [2];
-	let count = 2;
+	let count = 3;
 
-	for (let i = 3; primeNums[primeNums.length -1] < stopValue; i++) {
-		if ( i % count === 0 && count < i) {
-			count++;
-		} else if ( i % count !== 0 && count < i ) {
-			primeNums.push(i);
+	while (primeNums.length !== stopValue) {
+		if (rf.isPrime(count)) {
+			primeNums.push(count);
 		}
+		count++;	
 	}
-	console.log(count);
-	console.log(primeNums);
-	//return primeNums[x - 1];
+
+	console.log(primeNums.slice(-1));
+	return primeNums.slice(-1);
 }
 
 primeMultiplier(10001);
