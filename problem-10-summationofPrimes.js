@@ -9,10 +9,9 @@
  * */
 
 // THIS DOES NOT WORK WELL WITH INPUT 2000000.
-
+/*
 function primeSummer(maxVal) {
 	let sum = 2;
-
 	for (let i = 3; i < maxVal; i++) {
 		for (let j = 2; j <= i; j++) {
 			if (i % j === 0) {
@@ -27,5 +26,23 @@ function primeSummer(maxVal) {
 	console.log('Sum of the Prime Numbers:',sum);
 	return sum;
 }
+*/
 
-primeSummer(1000);
+function isPrime(num) {
+	var start = 2;
+	while (start <= Math.sqrt(num)) {
+		if (num % start++ < 1) return false;
+	}
+	return num > 1;
+}
+
+function sumOfPrimes(n) {
+	let sum = 0;
+  for (let i = 0; i < n; i++) {
+		if ( isPrime(i) ) { sum += i; }
+	}
+	console.log(sum);
+	return sum;
+}
+
+sumOfPrimes(2000000);
