@@ -13,6 +13,27 @@
  *
  * */
 
+
+// This Function is to recreate the chart on:
+// http://www.friesian.com/pythag.htm
+
+function pythagoreanTriples(n) {
+	let a = [],
+			b = [],
+			c = [];
+
+	for (let i = 3; i < 100; i++) {
+		const inc = a.length ? a.length - 1 : 0;
+
+		if (i % 2 !== 0) {
+			a.push(i);
+			b.push( ((i*i) - 1) / 2 );
+			c.push( (((i*i) - 1) / 2) + 1 );
+			console.log(a[inc], b[inc], c[inc]);
+		}
+	}
+}
+
 function pythagoreanRunner(sum) {
 	let a;
 	
