@@ -25,6 +25,8 @@
  * five hundred divisors?
  * */
 
+// DOESN'T WORK WITH 500!
+
 function triNum(x) {
   let notFound = true;
 	let storage = 0;
