@@ -26,15 +26,15 @@
  * */
 
 function collatzSeq(num) {
-	let maxNum = 0;
-	let maxInd = 0;
+	let maxNum = 0,
+	    maxInd = 0;
 
 	for (let j = num; j > num/2; j--) {
-		let total = [j];
-		let i = j;
+		let total = [j],
+		    i     = j;
 
-		while (i > 0) {
-			if (i> 1) {
+		while (i) {
+			if (i > 1) {
 				if (i % 2 === 0) {
 					i /= 2;
 					total.push(i);
@@ -51,7 +51,7 @@ function collatzSeq(num) {
 			}
 		}
 	}
-	
+
 	const msg = `${maxInd} has a chain of ${maxNum}.`;
 	console.log(msg);
 	return msg;

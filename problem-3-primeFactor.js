@@ -7,7 +7,7 @@
  *
  * Prime Factor: Any of the prime numbers that can be multiplied
  * to give the original number.
- * 
+ *
  * */
 
 function primeFactorFinder(num) {
@@ -17,7 +17,7 @@ function primeFactorFinder(num) {
   for (let i = 1; i <= num; i++) {
     if ( !(num % i) ) {
       product *= i;
-      
+
       if (product <= num) {
         primeFactor.push(i);
       } else {

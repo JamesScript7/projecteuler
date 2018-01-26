@@ -15,15 +15,17 @@ function largeSum(x) {
 	    sum     = 0;
 
 	for (let i = 0; i <= x.length; i++) {
-		if (i !== 0 && i % 50 == 0) {
+		if (i !== 0 && i % 50 === 0) {
 			arr.push(x.slice(counter,i));
 			counter = i;
 			sum += arr[arr.length - 1];
 		}
 	}
 
-	console.log(sum.slice(0,10));
-	return sum.slice(0,10);
+	const result = sum.slice(0,10);
+
+	console.log(result);
+	return result;
 }
 
 largeSum(sum);

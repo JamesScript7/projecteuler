@@ -7,9 +7,9 @@
  * 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. The first ten terms would be:
  *
  *      1,3,6,10,15,21,28,36,45,55,...
- * 
+ *
  * Let us list the factors of the first seven triangle numbers:
- * 
+ *
  * 1:  1
  * 3:  1,3
  * 6:  1,2,3,6
@@ -28,8 +28,8 @@
 // DOESN'T WORK WITH 500!
 
 function triNum(x) {
-  let notFound = true;
-	let storage = 0;
+  let notFound = true,
+	    storage  = 0;
 
 	for (let i = 1; notFound; i++) {
 		let count = 0;
@@ -40,9 +40,10 @@ function triNum(x) {
 				count++;
 			}
 		}
+
 		if (count >= x) {
+      notFound = false;
 			console.log(`${storage} has ${count} divisors`);
-			notFound = false;
 		}
 	}
 

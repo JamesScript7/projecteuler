@@ -18,7 +18,7 @@ function palindromic(x) {
 		for (let j = digit; j > 0; j--) {
 			const product  = String(i * j),
 						reversed = String(product.split('').reverse().join(''));
-			
+
 			if (product === reversed) {
 				console.log(product);
 				return `Largest Palindrome Found:\r${i} x ${j} = ${product}`;

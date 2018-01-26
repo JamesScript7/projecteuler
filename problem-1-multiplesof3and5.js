@@ -7,12 +7,12 @@
  * The sum of these multiples is 23.
  *
  * Find the sum of all the multiple of 3 or 5 below 1000.
- * 
+ *
  * */
 
 function coolFunction(num, total=0) {
 	const x = num - 1;
-	
+
 	if (x <= 0) {
 		console.log(total);
 		return total;
