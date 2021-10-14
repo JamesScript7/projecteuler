@@ -28,7 +28,7 @@ function primeSummer(maxVal) {
 }
 */
 
-const rf = require('./reusableFunctions');
+const rf = require('./lib/helpers');
 
 function sumOfPrimes(n) {
 	let sum = 0;

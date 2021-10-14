@@ -12,7 +12,7 @@
  * 
  * */
 
-const rf = require('./reusableFunctions');
+const rf = require('./lib/helpers');
 
 function primeMultiplier(stopValue) {
 	let primeNums = [2];
