@@ -10,11 +10,10 @@
  *
  * */
 
-function coolFunction(num, total=0) {
-	const x = num - 1;
+function coolFunction(num: number, total: number = 0): any {
+	const x: number = num - 1;
 
 	if (x <= 0) {
-		console.log(total);
 		return total;
 	} else if (x % 3 === 0 || x % 5 === 0) {
 		total += x;
@@ -23,4 +22,4 @@ function coolFunction(num, total=0) {
 	return coolFunction(x, total);
 }
 
-coolFunction(1000);
+console.log(coolFunction(1000));
